@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindAR AR with Audio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.7/dist/mindar-image.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.7/dist/mindar-image-three.prod.js"></script>
+</head>
+<body>
+  <div id="ar-container">
+    <video autoplay playsinline style="display: none;"></video>
+  </div>
+
+  <!-- Canvas for 3D rendering -->
+  <canvas id="ar-canvas"></canvas>
+
+  <!-- Audio -->
+  <audio id="ar-audio" src="la palmera.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
